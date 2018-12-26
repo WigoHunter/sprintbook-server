@@ -1,0 +1,13 @@
+type User {
+  id: ID! @unique
+  name: String!
+  email: String!
+}
+
+type Sprint {
+  id: ID! @unique
+  title: String!
+  description: String!
+  createdAt: DateTime!
+  # user: User!
+}

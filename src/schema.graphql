@@ -1,0 +1,9 @@
+# import * from './generated/prisma.graphql'
+
+type Mutation {
+	createSprint(title: String, description: String): Sprint!
+}
+
+type Query {
+	sprints: [Sprint]!
+}
